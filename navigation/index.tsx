@@ -32,7 +32,7 @@ import GroupList from '../screens/GroupList';
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName="AddMembers">
+        <Stack.Navigator initialRouteName="Login">
           <Stack.Screen
             name="CreateGroup"
             component={CreateGroup}
@@ -71,16 +71,17 @@ export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeNa
           <Stack.Screen
             name="Register"
             component={Register}
-            options={{
-              title: 'Register',
-              headerStyle: {
-                backgroundColor: '#307ecc',
-              },
-              headerTintColor: '#fff',
-              headerTitleStyle: {
-                fontWeight: 'bold',
-              },
-            }}
+            options={{ headerShown: false }}
+            // options={{
+            //   title: 'Register',
+            //   headerStyle: {
+            //     backgroundColor: '#307ecc',
+            //   },
+            //   headerTintColor: '#fff',
+            //   headerTitleStyle: {
+            //     fontWeight: 'bold',
+            //   },
+            // }}
           />
         </Stack.Navigator>
       </NavigationContainer>
