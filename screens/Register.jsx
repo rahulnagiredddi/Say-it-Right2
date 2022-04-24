@@ -38,7 +38,7 @@ const Register = (props) => {
           <Text style={styles.AccountText}>
             Already have an account?
             <Pressable style={[styles.pressButton]} onPress={() => props.navigation.navigate('Login')}>
-              <Text style={[styles.text, styles.BoldAccountText]}> Login</Text>
+              <Text style={[styles.text, styles.BoldAccountText]}> Logi</Text>
             </Pressable>
           </Text>
         </View>
